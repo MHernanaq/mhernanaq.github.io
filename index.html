@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu peso ideal</title>
+    <link rel="stylesheet" type="text/css" href="stilo.css">
+</head>
+<body>
+    <header><h1><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+      </svg>PESO IDEAL<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+      </svg></h1></header>
+
+    <form>
+        <div class="container">  
+            <div class="row">
+                <div class="col-25">
+                    <label>Altura(cm):</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" step="any" min="50" max="250" maxlength="20" size="20"  required placeholder="Altura" >
+                </div>
+            </div>
+            
+
+            <label>Edad (Escoga el rango):</label>
+            <select>
+                <option value="cb">15-18años</option>
+                <option value="lp">19-25años</option>
+                <option value="sc">26-35años</option>
+                <option value="bn">36 años para arriba</option>
+            </select>
+            
+        <br><br>
+
+            <label>Sexo: </label>
+            <select>
+                <option value="cb">Masculino</option>
+                <option value="bn">Femenino</option>
+                <option value="bn">Otro</option>
+            </select>
+            
+    
+            <div class="row">
+                <div class="col-25">
+                    <label>Coloque el diametro de su muñeca :</label>
+                </div>
+                <div class="col-75">
+                    <input type="number"  step="any" maxlength="20" size="20" name="rad" required placeholder="radio" min="1" max="30">
+                </div>
+            </div>
+            <input type="submit" value="Calcular">
+            <input type="reset" value="Limpiar">
+        </div>
+    </form>
+
+</body>
+</html>

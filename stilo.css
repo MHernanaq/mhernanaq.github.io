@@ -1,0 +1,77 @@
+input[type="text"], input[type="number"],
+select
+{
+    width: 50%;
+    padding: 12px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 500px;
+    resize: vertical;
+    background-color: rgba(63, 124, 174, 0.692);
+    margin: 25px;
+}
+body{
+    background-color: #26e5b5;
+}
+header{
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Indie Flower", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+input[type="submit"],
+input[type="reset"] {
+background-color: #07719f;
+color: rgb(255, 255, 255);
+padding: 12px 20px;
+border: none;
+border-radius: 300px;
+cursor: pointer;
+float: right;
+margin: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #1be114;
+
+}
+input[type="reset"]:hover {
+background-color: #1be114;
+}
+
+
+.container {
+    border-radius: 50px;
+    background-color: #5403f41d;
+    padding: 50px;
+}
+
+.col-25 {
+    float: left;
+    width: auto;
+    margin-top: 20px;
+}
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  @media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"],
+    input[type="reset"] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
